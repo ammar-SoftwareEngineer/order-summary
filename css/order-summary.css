@@ -1,0 +1,258 @@
+:root {
+    --main-color:hsl(245, 75%, 52%);
+    --secondary-color: hsl(224, 23%, 55%);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #e0e8ff;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* mobile */
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+   
+}
+
+/* medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+header {
+    width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+header .music {
+    border-radius: 20px 20px 0 0;
+}
+
+header .music .container {
+    width: 10vh;
+}
+
+@media (max-width:767px) {
+   
+    header {
+        margin-top: 10px;
+        
+        width: 88%;
+        box-shadow: 0 50px 50px 1px #ced6fa;
+    }
+    .container {
+        width: 350px;
+    
+    }
+    .music {
+        width: 88vw;
+    }
+}
+
+/* ==================================================================*/
+
+.order-summary {
+    text-align: center;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.order-summary h1 {
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+.order-summary p {
+    color: var(--secondary-color);
+    margin: -20px;
+    margin-top: -4px;
+    margin-bottom: -24px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+@media (max-width:767px) {
+    .order-summary {
+        width: 220px;
+    }
+    .order-summary h1 {
+        margin-bottom: 35px;
+        font-size: 25px;
+    }
+    .order-summary p {
+        margin: -20px;
+        line-height: 1.5;
+        font-size: 16px;
+        margin-bottom: -17px;
+    }
+}
+
+/* ================================================================== */
+
+.sale {
+    position: relative;
+    background-color: #f8f9fe;
+    height: 100px;
+    border-radius: 15px;
+    width: 80%;
+    margin: 45px;
+    margin-bottom: 50px;
+}
+
+.sale .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sale .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -45%;
+    margin-top: -24px;
+}
+
+.sale h2 {
+    font-size: 16px;
+    font-weight: 900;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -25%;
+    top: 50%;
+    left: 50%;
+}
+
+.sale p {
+    position: absolute;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 18px;
+    margin-left: -25%;
+    line-height: 1.5;
+    margin-top: 5px;
+    top: 50%;
+    left: 50%;
+}
+
+.sale a {
+    position: absolute;
+    margin-left: 24%;
+    margin-top: -3%;
+    top: 50%;
+    left: 50%;
+    color: var(--main-color);
+    font-weight: 900;
+}
+
+.sale a:hover {
+    filter: invert(20%);
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+    header .sale {
+        width: 85%;
+        margin: 40px auto;
+        margin-bottom: 50px;
+    }
+}
+
+/* ==================================================================== */
+
+.Confirm {
+    display: grid;
+    justify-items: center;
+    margin-top: -20px;
+}
+
+.Confirm .sales {
+    width: 80%;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 20px 20px 1px #e7e5fb;
+    margin-bottom: -8px;
+}
+
+.Confirm .cancel {
+    border: none;
+    background-color: white;
+    margin: 30px;
+    background-color: none;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.Confirm .sales:hover {
+    filter: opacity(70%);
+    cursor: pointer;
+}
+
+.Confirm .cancel:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+    .Confirm .sales {
+        width: 85%;
+        margin: auto;
+        z-index: 1;
+
+    }
+    
+}
+
