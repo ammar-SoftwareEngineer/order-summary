@@ -18,6 +18,11 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #e0e8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   min-height:100vh;
+
 }
 
 .container {
@@ -56,10 +61,7 @@ header {
     width: 450px;
     background-color: white;
     border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
 }
 
 header .container {
@@ -81,14 +83,11 @@ header .music .container {
    
     header {
         margin-top: 10px;
-        
+        margin-bottom: 10px;
         width: 88%;
         box-shadow: 0 50px 50px 1px #ced6fa;
     }
-    .container {
-        width: 350px;
-    
-    }
+   
     .music {
         width: 88vw;
     }
@@ -131,7 +130,6 @@ header .music .container {
     .order-summary p {
         margin: -20px;
         line-height: 1.5;
-        font-size: 16px;
         margin-bottom: -17px;
     }
 }
